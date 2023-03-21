@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+.container{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.number{
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+}
+
+.container2{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.start{
+    margin-top: 50px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Select{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.input{
+    margin-top: 50px;
+}
+
+.text{
+    margin-top: 50px;
+}
+
+.text-transparent{
+    color: transparent;
+}
+
+.text-white{
+    color: white
+}
+
+.submit{
+    padding: 10px;
+    border-radius: 10px;
+}
