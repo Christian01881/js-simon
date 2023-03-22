@@ -3,10 +3,6 @@
 // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 
-// const countDown = ()=> {
-//     const count = 30;
-
-// }
 
 // Creo una funzione che genera i 5 numeri casuali
 const casualNumber = ()=> {
@@ -39,7 +35,7 @@ start.addEventListener('click', function(){
     const container = document.querySelector('.container');
     container.innerHTML = '';
     casualNumber();
-    let count = 30;
+    let count = 3;
     const countDown = setInterval(() => {
     count--;
     if(count === 0){
@@ -53,24 +49,27 @@ start.addEventListener('click', function(){
 }, 1000);
     box(numberCasual);
 
+// creo un evento sul bottone per salvare i dati in input
     const game = document.querySelector('.submit');
     game.addEventListener('click', function(e){
-         e.preventDefault();
+        e.preventDefault();
         const cell = document.querySelectorAll('.number');
-        const memory = document.querySelector('.Select').value;
+        const memoryBox = document.querySelector('.Select');
+        const memory = memoryBox.value;
         console.log(memory);
         if(numberCasual.includes(parseInt(memory))){
             for(let i = 0; i < cell.length; i++){
                 if(parseInt(cell[i].innerHTML) === parseInt(memory)){
                     cell[i].classList.remove('text-transparent')
                 }
+                memoryBox.value = '';
             }
         }
-        memory.value = '';
+        
     })
 })
 
 
 
 
-// Creo un evento sul submit
+
